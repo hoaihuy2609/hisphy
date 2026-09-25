@@ -4,136 +4,179 @@
  */
 
 const data = {
-  // 1. THÔNG TIN CHỦ ĐỀ CHÍNH
+  // 1. THÔNG TIN CHỦ ĐỀ CHÍNH (MỤC 5.1)
   topic: {
-    title: 'Cách mạng Cơ học: Từ Galileo đến Isaac Newton',
-    period: 'THẾ KỶ XVII (1609 — 1687)',
-    formula: '$F = m \\cdot a$'
+    title: '5.1. Cơ học thế kỉ XVIII',
+    period: 'THẾ KỈ XVIII (1687 — 1788)',
+    formula: '$$L = T - V$$'
   },
 
   // 2. SỐ LIỆU TÓM TẮT BAN ĐẦU
   metrics: {
     sources: '04',
-    milestones: '05',
-    figures: '03'
+    milestones: '07',
+    figures: '06'
   },
 
-  // 3. CÁC MỐC DÒNG THỜI GIAN
+  // 3. CÁC MỐC DÒNG THỜI GIAN THEO ĐÚNG TÀI LIỆU
   timeline: [
     {
-      year: '1610',
-      era: 'BỐI CẢNH',
+      year: 'Cuối XVII',
+      era: '5.1.1.1 · ĐẤU TRANH TƯ TƯỞNG',
       tagKey: 'context',
-      title: 'Vũ trụ nhật tâm & Kính thiên văn',
-      desc: 'Galileo hướng ống kính lên bầu trời, quan sát các vệ tinh sao Mộc và các pha của sao Kim, phá vỡ mô hình địa tâm của Aristotle và Ptolemy.',
-      context: 'Hơn một nghìn năm, mô hình Địa tâm thống trị châu Âu. Mọi thiên thể được coi là hoàn hảo và xoay quanh Trái Đất.',
-      experiment: 'Chế tạo kính viễn vọng 20x. Phát hiện 4 mặt trăng Sao Mộc và vết đen Mặt Trời, chứng minh không phải mọi thứ đều quay quanh Trái Đất.',
-      legacy: 'Cung cấp bằng chứng thực nghiệm đầu tiên ủng hộ thuyết Nhật tâm Copernicus, khởi đầu thiên văn quan sát.',
-      formula: '$v = g \\cdot t$'
+      title: 'Khởi đầu cuộc đấu tranh tư tưởng Newton - Descartes',
+      desc: 'Tư tưởng của Newton lan sang lục địa châu Âu, làm bùng nổ cuộc đối đầu gay gắt giữa hai trường phái Newton và Descartes do nhiều lý thuyết dẫn đến kết luận trái ngược nhau.',
+      context: 'Cuộc cách mạng khoa học đã loại trừ ảnh hưởng của tư tưởng Aristote và vai trò thống trị của tôn giáo. Xã hội châu Âu chuyển biến từ phong kiến sang tư bản, các nhà khai sáng và duy vật Pháp đặt nền móng tư tưởng cho cách mạng tư sản.',
+      experiment: 'Voltaire đúc kết: Phái Descartes (Paris) cho rằng thế giới chứa đầy vật chất và Trái Đất dài ra ở hai cực (như quả trứng). Phái Newton (London) khẳng định thế giới là chân không và Trái Đất bị nén lại ở hai cực (như quả cam dẹt).',
+      legacy: 'Mở màn cho cuộc đối đầu học thuật lớn nhất thế kỉ XVIII giữa quan niệm môi trường liên tục (ete) và quan niệm môi trường gián đoạn & chân không.',
+      formula: '$$F = G \\frac{m_1 m_2}{r^2}$$'
     },
     {
-      year: '1638',
-      era: 'CÂU HỎI',
-      tagKey: 'question',
-      title: 'Quy luật rơi tự do & Khái niệm Quán tính',
-      desc: 'Thí nghiệm mặt phẳng nghiêng lật đổ quan niệm của Aristotle rằng vật nặng hơn sẽ rơi nhanh hơn.',
-      context: 'Aristotle khẳng định vật cần lực tác dụng liên tục để duy trì chuyển động, và vận tốc rơi tỷ lệ thuận với khối lượng.',
-      experiment: 'Dùng mặt phẳng nghiêng mài nhẵn và đồng hồ nước đo thời gian. Quãng đường chứng minh tỷ lệ với bình phương thời gian.',
-      legacy: 'Xác lập phương pháp nghiên cứu thực nghiệm: Giả thuyết → Đo đạc định lượng → Khái quát hóa toán học.',
-      formula: '$$s = \\frac{1}{2} g t^2$$'
-    },
-    {
-      year: '1666',
-      era: 'THỰC NGHIỆM',
+      year: '1684 — 1759',
+      era: '5.1.1.2 · THỰC NGHIỆM LỊCH SỬ',
       tagKey: 'evidence',
-      title: 'Năm kỳ diệu của Newton (Annus Mirabilis)',
-      desc: 'Trong đợt dịch hạch London, Isaac Newton về quê lánh nạn và độc lập phác thảo phép tính vi phân, quang học và trọng lực.',
-      context: 'Cambridge đóng cửa vì đại dịch, Newton ở ẩn 18 tháng tại Woolsthorpe và tự mình giải các bài toán bế tắc của thời đại.',
-      experiment: 'Thí nghiệm tách ánh sáng trắng qua lăng kính, quan sát quả táo rơi và liên hệ gia tốc rơi tự do với quỹ đạo Mặt Trăng.',
-      legacy: 'Tạo cây cầu nối giữa chuyển động vật lý trên mặt đất và quy luật chuyển động của các thiên thể trong không gian.',
-      formula: '$$F_g = G \\frac{m_1 m_2}{r^2}$$'
+      title: 'Thực nghiệm chứng minh lịch sử – Sự kiện Sao chổi Halley',
+      desc: 'Edmond Halley tính toán quỹ đạo sao chổi chu kỳ 76 năm; bộ ba Clairaut, Lalande và Lepaute tính toán nhiễu loạn hấp dẫn, chứng minh rực rỡ định luật Newton.',
+      context: 'Đầu năm 1684, Halley thảo luận cùng Robert Hooke và Christopher Wren về bài toán quỹ đạo dưới lực tỉ lệ nghịch bình phương khoảng cách nhưng chưa có lời giải thỏa đáng (Kepler khi đó chỉ mô tả hình học quỹ đạo, chứ chưa lý giải được nguyên nhân động lực học). Tháng 8/1684, Halley tìm đến Newton tại Cambridge, dẫn đến tiểu luận De Motu rồi mở rộng thành Principia (1687).',
+      experiment: 'Halley nghiên cứu 24 sao chổi (1337–1698), nhận thấy sao chổi 1531, 1607, 1682 là một và dự báo quay lại cuối 1758 / đầu 1759. Nhóm toán học Pháp (ông Clairaut, ông Lalande và bà Lepaute) tính toán lại có thêm nhiễu loạn từ Sao Mộc và Sao Thổ suốt nửa năm. Ngày 13/03/1759, sao chổi đi qua điểm cận nhật đúng như tính toán với sai số chỉ khoảng 1/1000 so với tổng chu kỳ.',
+      legacy: 'Khẳng định sự chính xác và tối ưu của định luật vạn vật hấp dẫn, vinh danh thiên thể mang tên Sao chổi Halley, chứng minh việc kết hợp giải tích và hình học mang lại hiệu quả rất cao.',
+      formula: '$$T \\approx 76\\text{ năm}$$'
     },
     {
-      year: '1687',
-      era: 'ĐỊNH LUẬT',
+      year: 'Giữa XVIII',
+      era: '5.1.1.3 · THẤT BẠI CỦA ETE',
+      tagKey: 'evidence',
+      title: 'Sự thất bại của Thuyết xoáy ete',
+      desc: 'Thuyết xoáy ete của Descartes bộc lộ sự mâu thuẫn, thiếu đồng bộ và mất tính tổng quát; cơ học Newton với tính nhất quán và định lượng toán học chính xác đã toàn thắng.',
+      context: 'Phái Descartes (môi trường liên tục) bác bỏ chân không, cho rằng không gian bị lấp đầy 100% bởi chất lỏng ete (chất lỏng vô hình phủ kín vũ trụ, xoáy tròn quanh các vật để truyền tương tác). Phái Newton khẳng định không gian và vật chất tách biệt, vũ trụ chủ yếu là chân không, các vật tự hút nhau bằng lực hấp dẫn.',
+      experiment: 'Phái Descartes phải liên tục đưa ra nhiều mô hình ete khác nhau cho từng hiện tượng cụ thể dẫn đến thiếu đồng bộ, mâu thuẫn lẫn nhau và mất tính tổng quát. Phái Newton tỏ ra vượt trội nhờ tính nhất quán và khả năng định lượng bằng toán học cực kỳ chính xác.',
+      legacy: 'Triết gia Voltaire châm biếm rằng các tác phẩm của Descartes chẳng khác nào một cuốn “tiểu thuyết siêu hình”. Đến giữa thế kỉ XVIII, đại bộ phận các nhà vật lý công nhận thuyết Newton, đánh dấu sự thắng thế hoàn toàn.',
+      formula: '$$\\text{Chân không} \\gg \\text{Vật chất}$$'
+    },
+    {
+      year: 'Thế kỉ XVIII',
+      era: '5.1.1.4 · LAN TỎA TOÀN DIỆN',
       tagKey: 'theory',
-      title: 'Xuất bản kiệt tác "Principia Mathematica"',
-      desc: 'Newton công bố 3 định luật chuyển động và Định luật vạn vật hấp dẫn, hoàn thiện hệ thống Cơ học cổ điển.',
-      context: 'Edmond Halley khuyến khích và tài trợ kinh phí để Newton hệ thống hóa các định luật chuyển động thiên thể.',
-      experiment: 'Dùng giải tích hình học suy dẫn chính xác cả 3 định luật chuyển động hành tinh của Johannes Kepler.',
-      legacy: 'Khung lý thuyết thống trị vật lý trong hơn 200 năm, làm nền tảng toán học cho cuộc Cách mạng Công nghiệp.',
-      formula: '$$F = \\frac{d(mv)}{dt} = m \\cdot a$$'
+      title: 'Cơ học Newton thâm nhập vào các lĩnh vực vật lý khác',
+      desc: 'Giới khoa học nhìn nhận mọi hiện tượng vật lý đều là kết quả chuyển động của vật chất dưới tác dụng của lực, hình thành các khái niệm mới mang tính cơ học.',
+      context: 'Sau chiến thắng trước phái Descartes, tư tưởng và phương pháp luận của Newton bắt đầu lan rộng và thâm nhập vào toàn bộ nền vật lý học.',
+      experiment: 'Xuất hiện các khái niệm mang tính cơ học như “lực điện”, “lực từ”, “chất nhiệt”, “vật điện”, “vật từ”... Áp dụng mô hình cơ học để giải thích từ chuyển động thiên thể đến các hiện tượng tự nhiên vi mô và vĩ mô.',
+      legacy: 'Các phương pháp luận và mô hình toán học của cơ học Newton chính thức trở thành công cụ nền tảng cho nhiều lĩnh vực vật lý học khác.',
+      formula: '$$\\vec{F} = m \\vec{a}$$'
     },
     {
-      year: '1704+',
-      era: 'DI SẢN',
+      year: '1687 — XVIII',
+      era: '5.1.2.1 · HẠN CHẾ HÌNH HỌC',
+      tagKey: 'question',
+      title: 'Hạn chế trong phương pháp chứng minh hình học của Newton',
+      desc: 'Newton sáng lập vi - tích phân nhưng trong Nguyên lý (1687) lại dùng hình học cổ điển, khiến các diễn giải trở nên phức tạp, gượng ép và thiếu tính hệ thống.',
+      context: 'Newton lo ngại phương pháp vi - tích phân mới sẽ khiến độc giả đương thời khó tiếp thu, nhưng lựa chọn hình học cổ điển khiến việc giải các bài toán phức tạp trở nên nặng nề và khó mở rộng.',
+      experiment: 'Các nhà toán học thế kỉ XVIII nhận thấy các phép chứng minh hình học mang tính riêng lẻ, giải quyết được bài toán này nhưng lại rất khó áp dụng khi bài toán chỉ thay đổi đôi chút.',
+      legacy: 'Đặt ra nhiệm vụ lịch sử kéo dài suốt một thế kỉ: chuyển đổi toàn bộ công trình của Newton sang ngôn ngữ giải tích, mở đầu bởi Leonhard Euler (1736) và hoàn thiện bởi Joseph-Louis Lagrange (1788).',
+      formula: '$$\\text{Hình học cổ điển} \\longrightarrow \\text{Giải tích vi - tích phân}$$'
+    },
+    {
+      year: '1736 — 1760s',
+      era: '5.1.2.2 · BƯỚC NGOẶT EULER',
+      tagKey: 'theory',
+      title: 'Đóng góp của Leonhard Euler: Chuyển từ hình học sang giải tích',
+      desc: 'Leonhard Euler tiên phong áp dụng vi - tích phân vào cơ học với tác phẩm Mechanica (1736) tại Saint Petersburg, mở ra con đường giải tích thanh thoát.',
+      context: 'Euler (1707–1783), nhà toán học, vật lý học Thụy Sĩ đại tài. Ông nhận thấy hạn chế của phép chứng minh hình học riêng lẻ và đi tìm lời giải mang tính tổng quát bằng giải tích.',
+      experiment: 'Năm 1736, Euler xuất bản cuốn Mechanica (Cơ học, hay khoa học về chuyển động được trình bày bằng giải tích) tại Saint Petersburg. Ông tổng hợp nghiên cứu để trình bày lại toàn bộ hệ thống cơ học nhất quán, logic và dễ tiếp cận.',
+      legacy: 'Diễn ra song hành với Cách mạng Công nghiệp lần thứ nhất (Anh, từ 1760s) đòi hỏi nghiên cứu chuyển động phức tạp (thẳng, tròn, quay, tuần hoàn, dao động, chất lưu...) phục vụ động cơ hơi nước James Watt và máy móc công nghiệp nặng.',
+      formula: '$$m \\frac{d^2 x}{dt^2} = F_x$$'
+    },
+    {
+      year: '1788',
+      era: '5.1.2.3 · ĐỈNH CAO LAGRANGE',
       tagKey: 'legacy',
-      title: 'Kỷ nguyên Khai Sáng & Kỹ thuật chính xác',
-      desc: 'Cơ học Newton trở thành hệ quy chiếu cho toàn bộ khoa học tự nhiên, dẫn đến việc phát hiện sao Hải Vương qua toán học.',
-      context: 'Cơ học chuyển từ tranh luận triết học sang công cụ dự đoán chính xác vị trí hành tinh, thủy triều và thiết kế máy móc cơ khí.',
-      experiment: 'Urbain Le Verrier tính toán quỹ đạo sao Thiên Vương bị nhiễu loạn và dự đoán chính xác tọa độ của sao Hải Vương (1846).',
-      legacy: 'Khẳng định sức mạnh dự đoán của toán học trong Vật lý học, kéo dài đến khi Thuyết Tương đối Einstein ra đời.',
-      formula: '$$\\frac{T^2}{a^3} = \\text{const}$$'
+      title: 'Sự hoàn thiện của Joseph Louis Lagrange: Xây dựng Cơ học giải tích tổng quát',
+      desc: 'Lagrange xuất bản kiệt tác Mécanique analytique (1788), đưa vào “tọa độ suy rộng” và “bậc tự do”, loại bỏ hoàn toàn yếu tố hình học, đưa cơ học lên đỉnh cao hoàn chỉnh.',
+      context: 'Joseph Louis Lagrange (1736–1813), nhà toán học, thiên văn học Ý - Pháp kiệt xuất. Đứng trước thách thức kỹ thuật của Cách mạng Công nghiệp, ông tự đề ra nhiệm vụ xây dựng hệ thống giải tích tổng quát hoàn chỉnh cho mọi hệ cơ học.',
+      experiment: 'Cuốn Cơ học giải tích chia 2 phần: Tĩnh học (dựa trên nguyên lý vận tốc ảo / dịch chuyển khả dĩ) và Động lực học. Đưa vào biến số mới là “tọa độ suy rộng” gắn với “bậc tự do” của hệ, tối ưu và giảm thiểu tối đa các phép tính phức tạp.',
+      legacy: 'Loại bỏ hoàn toàn các yếu tố hình học, không cần dựng hình hay lập luận không gian, biến cơ học thành một nhánh thuần túy của giải tích học. Đỉnh cao hoàn chỉnh của cơ học cổ điển.',
+      formula: '$$\\frac{d}{dt}\\left(\\frac{\\partial L}{\\partial \\dot{q}_i}\\right) - \\frac{\\partial L}{\\partial q_i} = 0$$'
     }
   ],
 
-  // 4. DANH SÁCH NHÂN VẬT CHỦ CHỐT
+  // 4. DANH SÁCH NHÂN VẬT (TRÍCH TRỰC TIẾP TỪ FILE)
   figures: [
-    {
-      name: 'Galileo Galilei',
-      period: '1564 — 1642',
-      initial: 'GG',
-      role: 'Cha đẻ phương pháp thực nghiệm',
-      text: 'Đặt nền móng cho cơ học chuyển động, người đầu tiên hướng kính thiên văn lên bầu trời và kiên định bảo vệ thuyết Nhật tâm.'
-    },
-    {
-      name: 'Johannes Kepler',
-      period: '1571 — 1630',
-      initial: 'JK',
-      role: 'Nhà toán học thiên văn',
-      text: 'Đưa ra 3 định luật miêu tả quỹ đạo elip của các hành tinh, cung cấp dữ liệu hình học chính xác để Newton hoàn thiện định luật hấp dẫn.'
-    },
     {
       name: 'Isaac Newton',
       period: '1643 — 1727',
       initial: 'IN',
-      role: 'Nhà triết học tự nhiên & toán học',
-      text: 'Thống nhất cơ học mặt đất và vũ trụ trong một hệ thống định luật nhất quán, viết nên cuốn "Principia" vĩ đại.'
+      role: 'Tác giả cuốn Principia (1687)',
+      text: 'Đặt nền móng cơ học cổ điển bằng 3 định luật chuyển động và luật vạn vật hấp dẫn bằng công cụ hình học cổ điển, trả lời bài toán quỹ đạo elip cho Halley.'
+    },
+    {
+      name: 'René Descartes',
+      period: '1596 — 1650',
+      initial: 'RD',
+      role: 'Khởi xướng Thuyết xoáy ete (Phái Paris)',
+      text: 'Đại diện trường phái Pháp cho rằng vũ trụ chứa đầy chất lỏng ete và Trái Đất dài ra ở hai cực, tạo nên cuộc tranh biện học thuật lớn nhất thế kỉ XVIII.'
+    },
+    {
+      name: 'Edmond Halley',
+      period: '1656 — 1742',
+      initial: 'EH',
+      role: 'Nhà khoa học Anh tài năng',
+      text: 'Khởi xướng bài toán 1684 thúc đẩy Newton viết Principia; nghiên cứu 24 sao chổi và tiên tri chính xác sự trở lại của Sao chổi Halley vào 1758/1759.'
+    },
+    {
+      name: 'Voltaire',
+      period: '1694 — 1778',
+      initial: 'VT',
+      role: 'Triết gia thời Khai Sáng Pháp',
+      text: 'Đúc kết sự đối lập gay gắt giữa phái Descartes (Paris) và phái Newton (London), châm biếm lý thuyết xoáy ete của Descartes như cuốn “tiểu thuyết siêu hình”.'
+    },
+    {
+      name: 'Leonhard Euler',
+      period: '1707 — 1783',
+      initial: 'LE',
+      role: 'Nhà toán học, vật lý học Thụy Sĩ đại tài',
+      text: 'Tác giả cuốn Mechanica (1736), tiên phong chuyển đổi cơ học từ hình học cổ điển sang ngôn ngữ vi - tích phân giải tích gọn gàng và thanh thoát.'
+    },
+    {
+      name: 'Joseph Louis Lagrange',
+      period: '1736 — 1813',
+      initial: 'JL',
+      role: 'Nhà toán học kiệt xuất Ý - Pháp',
+      text: 'Tác giả kiệt tác Cơ học giải tích (1788), đưa vào “tọa độ suy rộng” và “bậc tự do”, loại bỏ hoàn toàn hình vẽ, đưa cơ học lên đỉnh cao hoàn chỉnh.'
     }
   ],
 
-  // 5. TƯ LIỆU THAM KHẢO & NGUỒN GỐC
+  // 5. CÁC TÁC PHẨM KHOA HỌC XUẤT HIỆN TRONG FILE
   sources: [
     {
-      type: 'GIÁO TRÌNH',
-      filterType: 'document',
-      title: 'Lịch sử Vật lý học & Phương pháp luận',
-      meta: 'NXB Giáo Dục Việt Nam',
-      desc: 'Tài liệu chuẩn mực trình bày bối cảnh lịch sử, quá trình hình thành các định luật và cuộc đối thoại giữa các trường phái khoa học.',
-      link: '#'
-    },
-    {
-      type: 'CÔNG TRÌNH GỐC',
+      type: 'TÁC PHẨM KINH ĐIỂN',
       filterType: 'official',
-      title: 'Philosophiae Naturalis Principia Mathematica',
-      meta: 'Isaac Newton · Royal Society London (1687)',
-      desc: 'Bản in công bố các tiên đề chuyển động, định luật vạn vật hấp dẫn và hệ thống toán học giải tích hình học.',
+      title: 'Principia (Nguyên lý, 1687)',
+      meta: 'Isaac Newton · Luân Đôn',
+      desc: 'Công trình đặt nền móng cho cơ học cổ điển, dùng phương pháp hình học kết hợp định luật vạn vật hấp dẫn tính thành công quỹ đạo sao chổi 1680.',
       link: '#'
     },
     {
-      type: 'BẢN THẢO GỐC',
+      type: 'CHUYÊN KHẢO GIẢI TÍCH',
+      filterType: 'official',
+      title: 'Mechanica (Cơ học giải tích, 1736)',
+      meta: 'Leonhard Euler · Saint Petersburg',
+      desc: 'Khoa học về chuyển động được trình bày hoàn toàn bằng phương pháp giải tích vi - tích phân, mở đầu cuộc chuyển đổi từ hình học sang giải tích.',
+      link: '#'
+    },
+    {
+      type: 'ĐỈNH CAO GIẢI TÍCH',
+      filterType: 'official',
+      title: 'Mécanique analytique (Cơ học giải tích, 1788)',
+      meta: 'Joseph Louis Lagrange · Paris',
+      desc: 'Chia thành Tĩnh học và Động lực học, xây dựng hệ thống giải tích tổng quát dựa trên tọa độ suy rộng và bậc tự do, loại bỏ hoàn toàn hình vẽ.',
+      link: '#'
+    },
+    {
+      type: 'TIỂU LUẬN LỊCH SỬ',
       filterType: 'evidence',
-      title: 'Sidereus Nuncius (Sứ giả các vì sao)',
-      meta: 'Galileo Galilei · Venice (1610)',
-      desc: 'Công trình ghi lại các quan sát thiên văn đầu tiên bằng kính viễn vọng kèm hình vẽ pha Mặt Trăng và vệ tinh Sao Mộc.',
-      link: '#'
-    },
-    {
-      type: 'KHO LƯU TRỮ SỐ',
-      filterType: 'media',
-      title: 'The Newton Project Archives',
-      meta: 'University of Cambridge Digital Library',
-      desc: 'Kho tư liệu số hóa toàn bộ nhật ký thí nghiệm, bản thảo viết tay và thư tín trao đổi của Isaac Newton.',
+      title: 'De Motu (Tiểu luận về chuyển động, 1684)',
+      meta: 'Isaac Newton gửi Edmond Halley',
+      desc: 'Tiểu luận ngắn Newton viết trả lời Halley chứng minh quỹ đạo dưới lực hấp dẫn nghịch đảo bình phương khoảng cách là hình elip.',
       link: '#'
     }
   ]
@@ -431,7 +474,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const deckNotesContent = document.getElementById('deckNotesContent');
   const notesCloseBtn = document.getElementById('notesCloseBtn');
 
-  // Danh sách các Slides
+  // Danh sách các Slides (12 slide theo đúng Chuyên đề 5.1)
   const slides = [
     // Slide 1: Bìa
     {
@@ -439,35 +482,35 @@ document.addEventListener('DOMContentLoaded', () => {
       title: data.topic.title,
       period: data.topic.period,
       formula: data.topic.formula,
-      notes: 'Gợi ý mở đầu: Giới thiệu đề tài ngắn gọn, nhấn mạnh góc nhìn "hồ sơ điều tra khoa học" — con người đặt câu hỏi, làm thí nghiệm và lật đổ các quan niệm sai lầm cũ.'
+      notes: 'Gợi ý mở đầu: Giới thiệu chuyên đề 5.1 — Cơ học thế kỉ XVIII (1687 — 1788). Nêu bật 2 tiến trình lịch sử: Củng cố cơ học Newton bằng thực nghiệm và Kỷ nguyên chuyển đổi phương pháp luận sang giải tích vi - tích phân.'
     },
-    // Slide 2: 4 Nguyên tắc
+    // Slide 2: Bối cảnh xã hội & Nhiệm vụ khoa học
     {
-      type: 'principles',
-      notes: 'Gợi ý: Nhấn mạnh 4 nguyên tắc phương pháp luận: Không dựa vào uy quyền của quá khứ, mọi lý thuyết bắt buộc phải kiểm chứng qua thực nghiệm và công thức định lượng.'
+      type: 'context',
+      notes: 'Bối cảnh: Xã hội chuyển biến từ phong kiến sang tư bản, cách mạng tư sản Pháp và Đẳng cấp thứ ba. Khoa học thoát khỏi tư tưởng Aristote và thần quyền tôn giáo. Hai nhiệm vụ lớn: Củng cố cơ học Newton (Mục 5.1.1) và Giải tích hóa cơ học (Mục 5.1.2).'
     },
-    // Slide 3: Tổng quan số liệu
+    // Slide 3: Đối đầu tư tưởng Newton - Descartes (Bảng đối chiếu Voltaire)
     {
-      type: 'metrics',
-      notes: 'Gợi ý: Trình bày quy mô của hồ sơ — 04 tài liệu gốc đáng tin cậy, 05 mốc bước ngoặt lịch sử và 03 nhà khoa học vĩ đại nhất thế kỷ XVII.'
+      type: 'comparison',
+      notes: 'Tranh biện tư tưởng: Trình bày sự tương phản sâu sắc giữa London (Newton) và Paris (Descartes) qua ngòi bút Voltaire. Phái Descartes lúng túng vá víu mô hình ete mâu thuẫn, trong khi Newton thắng thế nhờ tính nhất quán và định lượng toán học chính xác.'
     },
-    // Slides 4 - 8: 5 Mốc lịch sử từ data.timeline
+    // Slides 4 - 10: 7 Mốc lịch sử từ data.timeline (Mục 5.1.1.1 đến 5.1.2.3)
     ...data.timeline.map((item, idx) => ({
       type: 'milestone',
       index: idx + 1,
       total: data.timeline.length,
       ...item,
-      notes: `Mốc năm ${item.year} (${item.era}): Trình bày bối cảnh vấn đề, thí nghiệm then chốt (${item.formula || 'thực nghiệm'}) và ý nghĩa lịch sử mà phát hiện này để lại.`
+      notes: `Mốc 0${idx + 1} (${item.year} · ${item.era}): ${item.title}. Trình bày 3 cột: Bối cảnh & Vấn đề, Bằng chứng thực nghiệm / Công thức (${item.formula || 'thực nghiệm'}), và Hệ quả & Di sản lịch sử.`
     })),
-    // Slide 9: Nhân vật
+    // Slide 11: 6 Nhân vật thời đại
     {
       type: 'figures',
-      notes: 'Gợi ý: Nhấn mạnh tính kế thừa của khoa học — Galileo tạo ra phương pháp, Kepler cung cấp dữ liệu hình học, và Newton hoàn thiện thành định luật phổ quát.'
+      notes: '6 Nhân vật chủ chốt trong tài liệu: Newton (nền móng Principia), Descartes (thuyết xoáy ete), Halley (tiên tri sao chổi), Voltaire (triết gia Khai sáng), Euler (Mechanica 1736) và Lagrange (Mécanique analytique 1788).'
     },
-    // Slide 10: Lời kết
+    // Slide 12: Tiến trình tiến hóa phương pháp luận (Lời kết)
     {
       type: 'closing',
-      notes: 'Gợi ý kết thúc: Khẳng định khoa học là một dòng chảy không ngừng nghỉ. Mở lời cảm ơn và mời thầy cô cùng các bạn đặt câu hỏi thảo luận.'
+      notes: 'Tổng kết tiến trình: “Từ bộ khung hình học của Newton (Nguyên lý, 1687), Euler đã khoác lên nó ngôn ngữ vi - tích phân (Mechanica, 1736), để rồi Lagrange nâng cấp tất cả thành một hệ thống giải tích tổng quát hoàn chỉnh (Cơ học giải tích, 1788).” Mời thầy cô và các bạn trao đổi thảo luận.'
     }
   ];
 
@@ -532,11 +575,11 @@ document.addEventListener('DOMContentLoaded', () => {
       html = `
         <div class="deck-slide deck-slide-cover">
           <div>
-            <p class="eyebrow" style="color:var(--accent);">PHYSICS CASEFILE · THUYẾT TRÌNH</p>
-            <h1>Khoa học cần<br /><em>minh chứng.</em></h1>
+            <p class="eyebrow" style="color:var(--accent);">CHUYÊN ĐỀ 5.1 · LỊCH SỬ VẬT LÝ</p>
+            <h1>Cơ học<br /><em>thế kỉ XVIII.</em></h1>
             <p class="hero-lead" style="font-size:18px; margin:16px 0 24px; color:#bdb6aa;">
-              Một hồ sơ học thuật công khai để trình bày các bước ngoặt Vật lý theo dòng thời gian:
-              <br><strong style="color:var(--text);">bối cảnh → câu hỏi → thực nghiệm → định luật → di sản.</strong>
+              Cuộc củng cố cơ học Newton bằng thực nghiệm và kỷ nguyên chuyển đổi sang phương pháp giải tích:
+              <br><strong style="color:var(--text);">Đấu tranh tư tưởng → Sự kiện Sao chổi Halley → Giải tích hóa của Euler & Lagrange.</strong>
             </p>
             <div class="trust-line" style="margin-top:20px;">
               <span class="dot"></span>
@@ -549,58 +592,74 @@ document.addEventListener('DOMContentLoaded', () => {
               <div class="orbit-ring orbit-ring-1"></div>
               <div class="orbit-ring orbit-ring-2"></div>
               <div class="formula-stamp">${slide.formula}</div>
-              <span>CASE<br />001</span>
+              <span>CASE<br />5.1</span>
             </div>
           </div>
         </div>
       `;
-    } else if (slide.type === 'principles') {
+    } else if (slide.type === 'context') {
       html = `
         <div class="deck-slide">
           <div class="deck-slide-box">
             <div class="deck-slide-header">
-              <p class="eyebrow">01 / PHƯƠNG PHÁP LUẬN</p>
-              <h2>Lý thuyết phải vững.<br /><em>Thí nghiệm phải tái lập được.</em></h2>
+              <p class="eyebrow">5.1 · BỐI CẢNH LỊCH SỬ & NHIỆM VỤ KHOA HỌC</p>
+              <h2>Chuyển biến thời đại &<br /><em>Hai nhiệm vụ lịch sử.</em></h2>
             </div>
             <div class="deck-grid-4">
               <div class="deck-card">
                 <span class="card-number">01</span>
-                <h3>Tách dữ kiện khỏi giả thuyết</h3>
-                <p>Mỗi mốc ghi rõ quan sát tự nhiên đã chứng minh, giới hạn của mô hình cũ và câu hỏi mới nảy sinh.</p>
+                <h3>Chuyển biến kinh tế - xã hội</h3>
+                <p>Xã hội Tây Âu chuyển từ phong kiến sang tư bản chủ nghĩa. Cách mạng tư sản bùng nổ, vai trò của Đẳng cấp thứ ba và các nhà Khai sáng Pháp.</p>
               </div>
               <div class="deck-card">
                 <span class="card-number">02</span>
-                <h3>Một tiêu chuẩn cho mọi quan sát</h3>
-                <p>Cùng một câu hỏi kiểm chứng và quy chuẩn toán học được áp dụng chặt chẽ cho mọi giả thuyết.</p>
+                <h3>Độc lập khỏi thần quyền</h3>
+                <p>Cách mạng khoa học trước đó đã loại trừ tư tưởng Aristote và vai trò thống trị của tôn giáo, mở đường cho nhận thức tự nhiên duy vật khách quan.</p>
               </div>
               <div class="deck-card">
                 <span class="card-number">03</span>
-                <h3>Bằng chứng phải đo đạc được</h3>
-                <p>Ưu tiên thiết bị thực nghiệm, phép đo định lượng, bản thảo gốc và công cụ quan sát trực tiếp.</p>
+                <h3>Nhiệm vụ 1: Củng cố cơ học Newton</h3>
+                <p>Bảo vệ cơ học Newton trước trường phái Descartes, kiểm chứng qua quan sát thiên văn học (sao chổi Halley) và khẳng định tính ưu việt tuyệt đối.</p>
               </div>
               <div class="deck-card" style="background:linear-gradient(135deg,rgba(239,184,106,0.1),#110f0c); border-color:#4a3e31;">
                 <span class="card-number">04</span>
-                <h3>Định luật mở đường tương lai</h3>
-                <p>Một phát hiện vĩ đại không khép lại tri thức mà mở ra những nhánh nghiên cứu và công nghệ mới.</p>
+                <h3>Nhiệm vụ 2: Chuyển sang giải tích</h3>
+                <p>Cách mạng Công nghiệp từ 1760s đòi hỏi tính toán chuyển động máy móc phức tạp, đặt ra yêu cầu chuyển bộ khung hình học sang giải tích vi - tích phân.</p>
               </div>
             </div>
           </div>
         </div>
       `;
-    } else if (slide.type === 'metrics') {
+    } else if (slide.type === 'comparison') {
       html = `
         <div class="deck-slide">
-          <div class="deck-slide-box" style="padding:60px 50px;">
-            <p class="eyebrow">02 / TỔNG QUAN TƯ LIỆU</p>
-            <h2 style="font-size:46px; margin:14px 0 36px;">Đừng chỉ nói <em>“tin tôi đi”.</em></h2>
-            <div class="evidence-metrics" style="gap:60px; margin-bottom:40px;">
-              <div><strong style="font-size:56px;">${data.metrics.sources}</strong><span style="font-size:12px;">Tài liệu tham khảo gốc</span></div>
-              <div><strong style="font-size:56px;">${data.metrics.milestones}</strong><span style="font-size:12px;">Mốc bước ngoặt lịch sử</span></div>
-              <div><strong style="font-size:56px;">${data.metrics.figures}</strong><span style="font-size:12px;">Nhân vật then chốt</span></div>
+          <div class="deck-slide-box">
+            <div class="deck-slide-header">
+              <p class="eyebrow">5.1.1.1 · ĐẤU TRANH TƯ TƯỞNG</p>
+              <h2>Newton đối đầu Descartes:<br /><em>London vs Paris.</em></h2>
             </div>
-            <p style="color:var(--muted); font-size:15px; line-height:1.7; max-width:720px; margin:0;">
-              Toàn bộ bài thuyết trình được đối soát và xây dựng dựa trên các công trình gốc (Principia, Sidereus Nuncius), các bản thảo lưu trữ Cambridge và giáo trình Lịch sử Vật lý chuẩn mực.
-            </p>
+            <div class="deck-grid-4">
+              <div class="deck-card">
+                <span class="card-number">01</span>
+                <h3>Bản chất không gian</h3>
+                <p><strong>Phái Descartes (Paris):</strong> Bác bỏ chân không; vũ trụ lấp đầy 100% bởi chất lỏng ete.<br><strong>Phái Newton (London):</strong> Khẳng định không gian và vật chất tách biệt; vũ trụ chủ yếu là chân không.</p>
+              </div>
+              <div class="deck-card">
+                <span class="card-number">02</span>
+                <h3>Hình dạng Trái Đất</h3>
+                <p><strong>Phái Descartes:</strong> Cho rằng Trái Đất hơi dài ra ở hai cực (như quả trứng).<br><strong>Phái Newton:</strong> Khẳng định Trái Đất bị nén lại ở hai cực (như quả cam dẹt).</p>
+              </div>
+              <div class="deck-card">
+                <span class="card-number">03</span>
+                <h3>Cơ chế tương tác & Lực</h3>
+                <p><strong>Descartes:</strong> Tương tác do va chạm trực tiếp qua các dòng xoáy ete bao quanh vật thể.<br><strong>Newton:</strong> Các vật tự hút nhau bằng lực hấp dẫn theo một định luật vạn vật hấp dẫn duy nhất.</p>
+              </div>
+              <div class="deck-card" style="background:linear-gradient(135deg,rgba(239,184,106,0.1),#110f0c); border-color:#4a3e31;">
+                <span class="card-number">04</span>
+                <h3>Đánh giá lịch sử của Voltaire</h3>
+                <p>Voltaire châm biếm tác phẩm của Descartes là “tiểu thuyết siêu hình”. Đến giữa thế kỉ XVIII, phái Newton hoàn toàn thắng thế.</p>
+              </div>
+            </div>
           </div>
         </div>
       `;
@@ -640,8 +699,8 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="deck-slide">
           <div class="deck-slide-box">
             <div class="deck-slide-header">
-              <p class="eyebrow">04 / NHÂN VẬT THỜI ĐẠI</p>
-              <h2>Những khối óc <em>thay đổi thời đại.</em></h2>
+              <p class="eyebrow">NHÂN VẬT THỜI ĐẠI</p>
+              <h2>Những bộ óc <em>định hình thế kỉ XVIII.</em></h2>
             </div>
             <div class="deck-figures-grid">
               ${data.figures.map((fig, i) => `
@@ -664,13 +723,13 @@ document.addEventListener('DOMContentLoaded', () => {
       html = `
         <div class="deck-slide">
           <div class="deck-slide-box" style="text-align:center; padding:70px 40px;">
-            <p class="eyebrow">05 / LỜI KẾT</p>
-            <h2 style="font-size: clamp(38px, 5vw, 64px); margin:16px 0 20px;">
-              Khoa học không dừng lại.<br /><em>Nó là sự tiếp nối.</em>
+            <p class="eyebrow">TỔNG KẾT TIẾN TRÌNH TIẾN HÓA</p>
+            <h2 style="font-size: clamp(34px, 4.5vw, 54px); margin:16px 0 24px;">
+              Từ bộ khung hình học<br /><em>đến giải tích tổng quát.</em>
             </h2>
-            <p style="max-width:640px; margin:0 auto 30px; font-size:16px; color:#bdb6aa; line-height:1.7;">
-              “Nếu tôi nhìn xa hơn những người khác, đó là vì tôi đứng trên vai những người khổng lồ.”
-              <br><span style="font-size:13px; color:var(--accent); font-weight:700;">— Isaac Newton (Thư gửi Robert Hooke, 1675)</span>
+            <p style="max-width:780px; margin:0 auto 34px; font-size:17px; color:#bdb6aa; line-height:1.75;">
+              “Từ bộ khung hình học của Newton (Nguyên lý, 1687), Euler đã khoác lên nó ngôn ngữ vi - tích phân (Mechanica, 1736), để rồi Lagrange nâng cấp tất cả thành một hệ thống giải tích tổng quát hoàn chỉnh (Cơ học giải tích, 1788).”
+              <br><span style="display:block; margin-top:14px; font-size:13px; color:var(--accent); font-weight:700; letter-spacing:0.1em; text-transform:uppercase;">— Chuyên đề 5.1: Cơ học thế kỉ XVIII</span>
             </p>
             <div style="display:inline-flex; gap:14px;">
               <button class="btn btn-primary" id="deckRestartBtn" style="padding:12px 24px;">Trở về đầu slide ↺</button>
