@@ -176,6 +176,71 @@
     </div>
   </div>
 
+  <!-- ========================================== -->
+  <!-- SLIDE DECK PRESENTATION OVERLAY (CÁCH 2)   -->
+  <!-- ========================================== -->
+  <div id="presentationDeck" class="deck-overlay deck-hidden" role="region" aria-label="Chế độ Trình chiếu toàn màn hình">
+    <div class="deck-topbar">
+      <div class="deck-top-left">
+        <span class="deck-brand">PHYSICS<span>CASE</span></span>
+        <span class="deck-slide-indicator" id="deckSlideIndicator">SLIDE 01 / 10</span>
+      </div>
+
+      <div class="deck-top-center">
+        <div class="deck-timer" id="deckTimerBox" title="Nhấp để tạm dừng / tiếp tục đếm thời gian">
+          <span class="deck-timer-icon">⏱</span>
+          <span id="deckTimerDisplay">00:00</span>
+        </div>
+      </div>
+
+      <div class="deck-top-right">
+        <button class="deck-btn" id="deckNotesBtn" title="Bật/Tắt Ghi chú diễn giả (Phím S)">
+          <span>📝 Ghi chú [S]</span>
+        </button>
+        <button class="deck-btn" id="deckFullscreenBtn" title="Bật/Tắt Toàn màn hình (Phím F)">
+          <span id="deckFsIcon">⛶ Toàn màn hình [F]</span>
+        </button>
+        <button class="deck-btn deck-btn-close" id="deckCloseBtn" title="Thoát trình chiếu (Phím Esc)">
+          ✕ Thoát [Esc]
+        </button>
+      </div>
+    </div>
+
+    <!-- Main Slide Stage -->
+    <div class="deck-stage" id="deckStage">
+      <!-- Dynamic slide content injected by script.js -->
+    </div>
+
+    <!-- Speaker Notes Drawer (Toggled by user) -->
+    <div class="deck-speaker-notes" id="deckSpeakerNotes">
+      <div class="notes-header">
+        <span class="notes-title">GỢI Ý DIỄN GIẢ (SPEAKER NOTES)</span>
+        <button class="notes-close" id="notesCloseBtn">✕</button>
+      </div>
+      <div class="notes-body" id="deckNotesContent">
+        <!-- Notes text injected dynamically -->
+      </div>
+    </div>
+
+    <!-- Bottom Controls -->
+    <div class="deck-bottombar">
+      <div class="deck-nav-controls">
+        <button class="deck-nav-btn" id="deckPrevBtn" title="Slide trước (Mũi tên Trái / Page Up)">
+          ← Trước
+        </button>
+        <button class="deck-nav-btn deck-nav-primary" id="deckNextBtn" title="Slide sau (Mũi tên Phải / Phím Cách / Enter / Bút bấm)">
+          Tiếp theo →
+        </button>
+      </div>
+      <div class="deck-hints">
+        Dùng phím <kbd>→</kbd> <kbd>Space</kbd> hoặc bút bấm slide để chuyển trang · <kbd>Esc</kbd> để thoát
+      </div>
+      <div class="deck-progress-track">
+        <div class="deck-progress-bar" id="deckProgressBar"></div>
+      </div>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
