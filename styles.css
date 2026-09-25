@@ -1489,3 +1489,15 @@ body.presentation .hero {
   }
 }
 
+/* KaTeX LaTeX formula styling */
+.katex {
+  font-size: 1.12em;
+  color: var(--accent-2);
+}
+
+.deck-formula-pill .katex-display,
+.modal-formula-box .katex-display {
+  margin: 0.25em 0;
+}
+
+

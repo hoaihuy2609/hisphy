@@ -8,7 +8,7 @@ const data = {
   topic: {
     title: 'Cách mạng Cơ học: Từ Galileo đến Isaac Newton',
     period: 'THẾ KỶ XVII (1609 — 1687)',
-    formula: 'F = m · a'
+    formula: '$F = m \\cdot a$'
   },
 
   // 2. SỐ LIỆU TÓM TẮT BAN ĐẦU
@@ -29,7 +29,7 @@ const data = {
       context: 'Hơn một nghìn năm, mô hình Địa tâm thống trị châu Âu. Mọi thiên thể được coi là hoàn hảo và xoay quanh Trái Đất.',
       experiment: 'Chế tạo kính viễn vọng 20x. Phát hiện 4 mặt trăng Sao Mộc và vết đen Mặt Trời, chứng minh không phải mọi thứ đều quay quanh Trái Đất.',
       legacy: 'Cung cấp bằng chứng thực nghiệm đầu tiên ủng hộ thuyết Nhật tâm Copernicus, khởi đầu thiên văn quan sát.',
-      formula: 'v = g · t'
+      formula: '$v = g \\cdot t$'
     },
     {
       year: '1638',
@@ -40,7 +40,7 @@ const data = {
       context: 'Aristotle khẳng định vật cần lực tác dụng liên tục để duy trì chuyển động, và vận tốc rơi tỷ lệ thuận với khối lượng.',
       experiment: 'Dùng mặt phẳng nghiêng mài nhẵn và đồng hồ nước đo thời gian. Quãng đường chứng minh tỷ lệ với bình phương thời gian.',
       legacy: 'Xác lập phương pháp nghiên cứu thực nghiệm: Giả thuyết → Đo đạc định lượng → Khái quát hóa toán học.',
-      formula: 's = ½ · g · t²'
+      formula: '$$s = \\frac{1}{2} g t^2$$'
     },
     {
       year: '1666',
@@ -51,7 +51,7 @@ const data = {
       context: 'Cambridge đóng cửa vì đại dịch, Newton ở ẩn 18 tháng tại Woolsthorpe và tự mình giải các bài toán bế tắc của thời đại.',
       experiment: 'Thí nghiệm tách ánh sáng trắng qua lăng kính, quan sát quả táo rơi và liên hệ gia tốc rơi tự do với quỹ đạo Mặt Trăng.',
       legacy: 'Tạo cây cầu nối giữa chuyển động vật lý trên mặt đất và quy luật chuyển động của các thiên thể trong không gian.',
-      formula: 'F_g = G · (m₁ · m₂) / r²'
+      formula: '$$F_g = G \\frac{m_1 m_2}{r^2}$$'
     },
     {
       year: '1687',
@@ -62,7 +62,7 @@ const data = {
       context: 'Edmond Halley khuyến khích và tài trợ kinh phí để Newton hệ thống hóa các định luật chuyển động thiên thể.',
       experiment: 'Dùng giải tích hình học suy dẫn chính xác cả 3 định luật chuyển động hành tinh của Johannes Kepler.',
       legacy: 'Khung lý thuyết thống trị vật lý trong hơn 200 năm, làm nền tảng toán học cho cuộc Cách mạng Công nghiệp.',
-      formula: 'F = d(mv)/dt = m · a'
+      formula: '$$F = \\frac{d(mv)}{dt} = m \\cdot a$$'
     },
     {
       year: '1704+',
@@ -73,7 +73,7 @@ const data = {
       context: 'Cơ học chuyển từ tranh luận triết học sang công cụ dự đoán chính xác vị trí hành tinh, thủy triều và thiết kế máy móc cơ khí.',
       experiment: 'Urbain Le Verrier tính toán quỹ đạo sao Thiên Vương bị nhiễu loạn và dự đoán chính xác tọa độ của sao Hải Vương (1846).',
       legacy: 'Khẳng định sức mạnh dự đoán của toán học trong Vật lý học, kéo dài đến khi Thuyết Tương đối Einstein ra đời.',
-      formula: 'T² / a³ = const'
+      formula: '$$\\frac{T^2}{a^3} = \\text{const}$$'
     }
   ],
 
@@ -140,6 +140,27 @@ const data = {
 };
 
 // ==========================================
+// RENDER CÔNG THỨC TOÁN LATEX VỚI KATEX (CHUẨN MIKTEX)
+// ==========================================
+function renderMath(target = document.body) {
+  if (window.renderMathInElement) {
+    try {
+      window.renderMathInElement(target, {
+        delimiters: [
+          { left: '$$', right: '$$', display: true },
+          { left: '$', right: '$', display: false },
+          { left: '\\(', right: '\\)', display: false },
+          { left: '\\[', right: '\\]', display: true }
+        ],
+        throwOnError: false
+      });
+    } catch (err) {
+      console.warn('KaTeX render error:', err);
+    }
+  }
+}
+
+// ==========================================
 // RENDER DỮ LIỆU BAN ĐẦU LÊN GIAO DIỆN
 // ==========================================
 document.addEventListener('DOMContentLoaded', () => {
@@ -149,7 +170,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const heroFormula = document.getElementById('heroFormula');
   if (heroTopic) heroTopic.textContent = data.topic.title;
   if (heroPeriod) heroPeriod.textContent = data.topic.period;
-  if (heroFormula) heroFormula.textContent = data.topic.formula;
+  if (heroFormula) {
+    heroFormula.innerHTML = data.topic.formula;
+    renderMath(heroFormula);
+  }
+
+  // Tự động kích hoạt KaTeX khi thư viện tải xong
+  window.addEventListener('load', () => renderMath(document.body));
+  setTimeout(() => renderMath(document.body), 200);
 
   // Gán thông tin Metrics
   const metricSources = document.getElementById('metricSources');
@@ -273,6 +301,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
       timelineList.appendChild(el);
     });
+
+    renderMath(timelineList);
   }
 
   renderTimeline('all');
@@ -369,6 +399,7 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
     modal.classList.add('open');
     document.body.style.overflow = 'hidden';
+    renderMath(modalContent);
   }
 
   function closeModal() {
@@ -651,6 +682,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     deckStage.innerHTML = html;
+    renderMath(deckStage);
 
     // Gán nút Restart / Exit trong slide kết thúc
     document.getElementById('deckRestartBtn')?.addEventListener('click', () => renderSlide(0));
